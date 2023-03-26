@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Daily News - Get all the latest news</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+ 
+    <nav class="navbar bg-dark navbar-expand-lg " data-bs-theme="dark">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="favicon.png" alt="Logo" width="24" height="24" class="d-inline-block align-text-top">
+                Daily News
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active hover" aria-current="page" href="#" data-toggle="tooltip"
+                            data-original-title="Home">Home</a>
+                    </li>
+
+            
+                </ul>
+
+                <div class="d-flex">
+                    <a href="search.html"><button class="btn btn-danger" id="search">Search News by Topics</button></a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" data-interval="1000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100 imgcar" id="img1" alt="..." height=545px>
+
+                <div class="carousel-caption d-block d-md-block text-center mt-5">
+                    <h5 id="head1" style="cursor: pointer;"></h5>
+                    <p class="d-none d-md-block" id="descrip1"></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 imgcar" id="img2" alt="..." height=545px>
+                <div class="carousel-caption d-block d-md-block text-center mt-5">
+                    <h5 id="head2" style="cursor: pointer;"></h5>
+                    <p class="d-none d-md-block" id="descrip2"></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 imgcar" id="img3" height=545px>
+                <div class="carousel-caption d-block d-md-block text-center mt-5">
+                    <h5 id="head3" style="cursor: pointer;" ></h5>
+                    <p class="d-none d-md-block" id="descrip"></p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container-fluid mt-2 ml-1 ">
+        <hr>
+        <h2 class="text-dark-emphasis">Today Top Headlines :- </h2>
+        <hr>
+    </div>
+    <div class="container-fluid  mt-2 ml-5 mr-5">
+        <div class="row row-cols-1 row-cols-md-2 g-4" id="childnews">
+            <div class="col">
+                <div class="card ">
+                    <!-- animg 1 - 2- 3-4 for thearticle image height already set -->
+                    <!-- ht1-2-3-4 for all the respective main titles as h5 -->
+                    <!-- desperciption para id is dp1-2-3-4 -->
+                    <!-- published date variable is pd1234 -->
+                    <!-- link12345 for readmore href tag -->
+
+
+                    <img id="animg1" height=300px class="card-img-top" alt="..." onerror="this.onerror=null; this.src='error.jpg';">
+                    <div class="card-body">
+                        <h5 class="card-title" id="ht1"></h5>
+                        <p class="card-text" id="dp1"></p>
+                        <p class="card-text" id="pd1"><small class="text-body-secondary">Published on 23 March
+                                2023</small></p>
+                        <div class="card text-center ml-5 mr-5"> <a href="#" class="btn btn-primary" target="_blank"
+                                id="link1">Read more</a></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img id="animg2" height=300px class="card-img-top" alt="..." onerror="this.onerror=null; this.src='error.jpg';">
+                    <div class="card-body">
+                        <h5 class="card-title" id="ht2"></h5>
+                        <p class="card-text" id="dp2"></p>
+                        <p class="card-text" id="pd2"><small class="text-body-secondary">Published on 23 March
+                                2023</small></p>
+                        <div class="card text-center ml-5 mr-5"> <a href="#" class="btn btn-primary" target="_blank"
+                                id="link2">Read more</a></div>
+                    </div>
+                </div>
+            </div>
+          
+           
+
+        </div>
+    </div>
+    </div>
+
+    <div class="container-fluid ml-5 mr-5" >
+        <div class="row row-cols-1 row-cols-md-2 g-4" id="childnews">
+           
+          
+            </div></div>
+    <div class="container-fluid mt-4 ml-1 mb-4">
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-outline-primary" type="button" id="loadmore">Load More News</button>
+
+        </div>
+    </div>
+    <footer class="bg-light py-3 mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                  <center> <p>&copy; 2023 Daily News ,Made with &#10084 by SK Feat</p></center> 
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+    integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+    crossorigin="anonymous"></script>
+<script src="slidernews.js"></script>
+<script src="animenews.js"></script>
+<script src="search.js"></script>
+</body>
+
+</html>
